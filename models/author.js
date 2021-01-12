@@ -14,8 +14,8 @@ authorSchema.pre("remove", function (next) {
       next(err);
     } else if (books.length > 0) {
       next(new Error("This author has books still"));
-      books.forEach((book) => book.remove()); // remove author and books associated
-      next();
+      /*books.forEach((book) => book.remove()); // remove author and books associated
+      next();*/
     } else {
       next();
     }
