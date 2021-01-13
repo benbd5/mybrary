@@ -1,7 +1,8 @@
-<h2>Modification du livre</h2>
-
+<h2 class="page-header">Modifier le livre</h2>
 <form action="/books/<%= book.id %>?_method=PUT" method="POST">
     <%- include('_form_fields') %>
-    <a href="/books">Annuler</a>
-    <button type="submit">Mettre à jour</button>
+    <div class="form-row form-row-end btn-row">
+        <a class="btn btn-danger" href="/books">Annuler</a>
+        <button class="btn btn-primary" type="submit">Mettre à jour</button>
+    </div>
 </form>
